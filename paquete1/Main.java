@@ -9,9 +9,7 @@ public class Main {
         objet1.setNombre("Gerson");
         System.out.println("El nombre es: " +objet1.getNombre());
         System.out.println("asdfsdfdsf");
-        System.out.println("hola1");
-        System.out.println("hola 2");
-        System.out.println("hola 3");
+      
     }
 
 }
