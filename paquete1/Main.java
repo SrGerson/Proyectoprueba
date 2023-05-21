@@ -8,6 +8,9 @@ public class Main {
         System.out.println("la edad e: " +objet1.getEdad());
         objet1.setNombre("Gerson");
         System.out.println("El nombre es: " +objet1.getNombre());
+        System.out.println("asdfsdfdsf");
+        System.out.println("hola1");
+        System.out.println("hola 2");
     }
 
 }
