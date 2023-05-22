@@ -18,7 +18,8 @@ public class Main {
             caballo1.setVelocidadmax(90);
             System.out.println("la velocidad maxima del caballo es: " +  caballo1.getVelocidadmax());
         }
-
+        // cuando quiero imprimir el objeto como el de abajo , me voy a la clase Caballo y pongo generate toString();
+        System.out.println("los datos del caballo son: " + caballo1);
 
 
 

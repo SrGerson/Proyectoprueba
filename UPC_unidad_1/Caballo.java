@@ -64,4 +64,16 @@ public class Caballo {
     public int getVelocidadmax() {
         return velocidadmax;
     }
+
+    @Override
+    public String toString() {
+        return "Caballo{" +
+                " color = " + color + '\'' +
+                ", raza = " + raza + '\'' +
+                ", tipo = " + tipo + '\'' +
+                ", tamaño = " + tamaño + '\'' +
+                ", sexo = " + sexo +
+                ", velocidadmax =" + velocidadmax +
+                " } ";
+    }
 }
