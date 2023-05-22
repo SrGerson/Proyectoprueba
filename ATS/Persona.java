@@ -2,37 +2,31 @@ package ATS;
 
 public class Persona {
     // Atributos
-    String nombre;
-    String edad;
-    String dni;
-    int banco;
+   private  final String nombre;
+   /*la palabra "final " es una constante que no se puede cambiar añadiendo a una variable, esa variable no podra cambiarse
+    a lo largo del programa */
+     private int edad;
 
-
-    public Persona(String nombre,String dni) {
+    public Persona(String nombre, int edad) {
         this.nombre = nombre;
-        this.dni =dni;
-    }
-
-    public Persona(String edad,int banco) {
-        this.banco=banco;
         this.edad = edad;
-
-
     }
 
-    public  void nombre_edad (){
-        System.out.println("Hola me llamo " + nombre + " y mi DNI es " + dni );
-
-
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
-    public void dni_banco(){
-        System.out.println("Tengo la edad de " + edad + " y la cuenta de mi banco es: S/"+banco );
 
+    public String getNombre() {
+        return nombre;
     }
-    public void correr(int km){
-        System.out.println("he corrido la cantidad de: " + km + " kilometros ");
 
+    public int getEdad() {
+        return edad;
     }
+    public void mostrarResultados(){
+        System.out.println("Me llamo: " + nombre + " y tengo: " + edad + " años " );
+}
+
 
 
 
