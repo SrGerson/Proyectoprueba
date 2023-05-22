@@ -4,7 +4,9 @@ public class Persona {
     // Atributos
    private  final String nombre;
    /*la palabra "final " es una constante que no se puede cambiar añadiendo a una variable, esa variable no podra cambiarse
-    a lo largo del programa */
+    a lo largo del programa
+    estoy escribiendo desde git hub
+    */
      private int edad;
 
     public Persona(String nombre, int edad) {
