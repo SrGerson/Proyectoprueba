@@ -6,6 +6,8 @@ public class Persona {
    /*la palabra "final " es una constante que no se puede cambiar añadiendo a una variable, esa variable no podra cambiarse
     a lo largo del programa
     estoy escribiendo desde git hub
+    ahora estoy escribiendo desde el local
+
     */
      private int edad;
 

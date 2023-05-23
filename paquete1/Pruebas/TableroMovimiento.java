@@ -32,8 +32,6 @@ public class TableroMovimiento {
                 System.out.println("Movimiento inválido. Por favor, ingrese un movimiento válido.");
                 continue;
             }
-            
-
             // Verificar si el objeto está dentro del tablero
             if (tablero.estaDentro(objeto.getX(), objeto.getY())) {
                 System.out.println("El objeto se ha movido a la posición: (" + objeto.getX() + ", " + objeto.getY() + ")");
