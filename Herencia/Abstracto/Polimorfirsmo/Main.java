@@ -11,7 +11,6 @@ public class Main {
              ) {
             System.out.println(vehiculos.mostrardatos());
             System.out.println("");
-
         }
         //el polimorfismo son las muchas formas de actuar como puede actuar un objeto dependiendo del contexto como es que lo pongas
     }
