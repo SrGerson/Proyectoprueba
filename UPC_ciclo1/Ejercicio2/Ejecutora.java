@@ -24,7 +24,7 @@ Tener en cuenta que los valores de la velocidad son números enteros.
  */
 public class Ejecutora {
     public static void main(String[] args) {
-       PerrosCorredores perro1 = new PerrosCorredores("Perro01",1,102);
+       PerrosCorredores perro1 = new PerrosCorredores("Perro011",1,102);
         System.out.println(perro1.generadorAleatorio());
 
 
