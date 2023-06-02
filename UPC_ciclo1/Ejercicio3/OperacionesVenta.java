@@ -126,14 +126,6 @@ public class OperacionesVenta {
         }
 
 
-        //  vendedorPremium = vendedor;   // actualizamos el valor máximo y guardamos la referencia al vendedor
-
-        // if (vendedorPremium != null) {  // Verificamos si se encontró un vendedor con el promedio de ventas más alto
-        //  vendedorPremium.setBono();  // Asignamos un bono de valor 15 al vendedor con el promedio de ventas más alto
-
-
-        // return maxVenta;
-
     }
 
 

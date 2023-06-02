@@ -1,4 +1,7 @@
 package UPC_ciclo1.Ejercicio2;
+
+import java.util.Scanner;
+
 /*
 1)	Un casino desea desarrollar un canódromo virtual. Para ello quieren definir a cada uno de los perros corredores.
 Estos llevan como identificación un nombre, un número de pista (del 1 al 7) y una velocidad base (entre 1 y 10).
@@ -24,10 +27,21 @@ Tener en cuenta que los valores de la velocidad son números enteros.
  */
 public class Ejecutora {
     public static void main(String[] args) {
-       PerrosCorredores perro1 = new PerrosCorredores("Perro011",1,102);
-        System.out.println(perro1.generadorAleatorio());
+        Scanner input = new Scanner(System.in);
 
+        String opcion;
+      OperacionesPerros perro1 = new OperacionesPerros();
 
+        System.out.println("Bienvenidos al canódromo virtual ");
 
+        do {
+            perro1.perrosagregados();
+            System.out.println("deseas agregar mas perros? si/no");
+            opcion= input.nextLine();
+        }while (opcion.equals("SI"));
+
+        perro1.velocidadFinal();
+        perro1.generadorVelocidad();
+        perro1.imprimirResultados();
     }
 }
