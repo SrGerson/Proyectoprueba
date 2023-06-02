@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         float lado1;
         float lado2;
-        float resultado;
+
         Cuadrilatelo c1;
         lado1 = Float.parseFloat(JOptionPane.showInputDialog("ingrese digite el lado 1 "));
         lado2 = Float.parseFloat(JOptionPane.showInputDialog("ingrese el lado 2"));
