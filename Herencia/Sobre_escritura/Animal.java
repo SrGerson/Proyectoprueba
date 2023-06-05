@@ -2,6 +2,6 @@ package Herencia.Sobre_escritura;
 
 public class Animal {
         public void comer(){
-            System.out.println("estoy comiendo");
+            System.out.println("estoy jugando");
         }
 }
