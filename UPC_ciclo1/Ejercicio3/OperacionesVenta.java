@@ -27,46 +27,57 @@ public class OperacionesVenta {
 
             input.nextLine(); // Limpiar el buffer del scanner
             codigoRepetido = false; // Reiniciar la variable en cada iteración
-            System.out.print("Ingrese el codigo del vendedor: " + (i + 1) + ": ");
-            codigo = input.nextLine(); //"Espera a que el usuario termine de escribir y presione Enter para eso funciona
 
-            // Verificar si el código ya existe en algún vendedor de la lista
-            //  Recorremos la lista de vendedores uno por uno, como si estuviéramos revisando cada uno de ellos.
-            for (Vendedores vendedor : listaVendedores) {
-                //  Vendedores Indica que estamos recorriendo una lista de objetos de la clase "Vendedores".
-                //Vendedores seria el tipo de juguete , vendedor seria el juguete y listavendedores seria la caja llena de juguetes:
-                // Comprobamos si el código del vendedor es igual al código que queremos ingresar
-                if (vendedor.getCodigo().equals(codigo)) {
-                    // Si encontramos un vendedor con el mismo código, es como si encontramos a un amigo
-                    // que ya está en la lista de invitados de una fiesta.
-                    // Entonces, mostramos un mensaje diciendo que el código ya ha sido ingresado.
-                    System.out.println("El código del vendedor " + codigo + " ya ha sido ingresado. Por favor, ingrese un código válido.");
-                    // Marcamos la bandera como verdadera para indicar que encontramos un vendedor repetido.
-                    codigoRepetido = true;
-                    // Salimos del bucle, ya que no necesitamos seguir buscando en la lista.
-                    break;
+
+
+                System.out.print("Ingrese el codigo del vendedor: " + (i + 1) + ": ");
+                codigo = input.nextLine(); //"Espera a que el usuario termine de escribir y presione Enter para eso funciona
+
+                // Verificar si el código ya existe en algún vendedor de la lista
+                //  Recorremos la lista de vendedores uno por uno, como si estuviéramos revisando cada uno de ellos.
+                for (Vendedores vendedor : listaVendedores) {
+                    //  Vendedores Indica que estamos recorriendo una lista de objetos de la clase "Vendedores".
+                    //Vendedores seria el tipo de juguete , vendedor seria el juguete y listavendedores seria la caja llena de juguetes:
+                    // Comprobamos si el código del vendedor es igual al código que queremos ingresar
+
+                    if (vendedor.getCodigo().equals(codigo)) {
+                        // Si encontramos un vendedor con el mismo código, es como si encontramos a un amigo
+                        // que ya está en la lista de invitados de una fiesta.
+                        // Entonces, mostramos un mensaje diciendo que el código ya ha sido ingresad
+                        // o.
+                        System.out.println("El código del vendedor " + codigo + " ya ha sido ingresado. Por favor, ingrese un código válido.");
+                        // Marcamos la bandera como verdadera para indicar que encontramos un vendedor repetido.
+                        codigoRepetido = true;
+
+                        // Salimos del bucle, ya que no necesitamos seguir buscando en la lista.
+
+                        break;
+
+                    }
 
                 }
-            }
 
-            if (!codigoRepetido) {
-                // Crear una nueva instancia de Vendedores
-                System.out.print("Digite la venta semana 1: ");
-                venta1 = input.nextDouble();
-                System.out.print("Digite la venta semana 2: ");
-                venta2 = input.nextDouble();
-                System.out.print("Digite la venta de semana 3: ");
-                venta3 = input.nextDouble();
-                agregarVendedores.setCodigo(codigo);
-                agregarVendedores.setVenta1(venta1);
-                agregarVendedores.setVenta2(venta2);
-                agregarVendedores.setVenta3(venta3);
-                Vendedores nuevoVendedor = new Vendedores(codigo, venta1, venta2, venta3);
 
-                listaVendedores.add(nuevoVendedor);
-            }
+                if (!codigoRepetido) {
+                    // Crear una nueva instancia de Vendedores
+                    System.out.print("Digite la venta semana 1: ");
+                    venta1 = input.nextDouble();
+                    System.out.print("Digite la venta semana 2: ");
+                    venta2 = input.nextDouble();
+                    System.out.print("Digite la venta de semana 3: ");
+                    venta3 = input.nextDouble();
+                    agregarVendedores.setCodigo(codigo);
+                    agregarVendedores.setVenta1(venta1);
+                    agregarVendedores.setVenta2(venta2);
+                    agregarVendedores.setVenta3(venta3);
+                    Vendedores nuevoVendedor = new Vendedores(codigo, venta1, venta2, venta3);
+
+                    listaVendedores.add(nuevoVendedor);
+                }
+
 
         }
+
     }
 
 

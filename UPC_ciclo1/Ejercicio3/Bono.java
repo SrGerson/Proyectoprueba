@@ -3,7 +3,7 @@ package UPC_ciclo1.Ejercicio3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bono {
+public  abstract class Bono {
     private String nombre;
     private List<Vendedores> listavendedores;
 

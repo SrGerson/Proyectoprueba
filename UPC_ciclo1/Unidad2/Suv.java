@@ -9,4 +9,16 @@ public class Suv extends Automovil{
         this.GPS = GPS;
         this.llanta_trasera = llanta_trasera;
     }
+
+
+
+    @Override
+    public String toString() {
+        return "Suv{" + toStringAtributosAutomovil()+
+                " ,GPS= " + GPS +
+                ", llanta_trasera=" + llanta_trasera +
+                '}';
+    }
+
+
 }
